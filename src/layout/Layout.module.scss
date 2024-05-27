@@ -1,0 +1,102 @@
+@import '../styles/variables.scss';
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    padding: 30px;
+    border-right: 1px solid $separator-color;
+    display: flex;
+    flex-direction: column;
+    min-width: 215px;
+
+    .user {
+        &__avatar {
+            filter:drop-shadow(0px 8px 40px rgba(255, 197, 41, 0.25));
+        }
+    
+        &__name {
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 700;
+            color: $text-color;
+            margin-top: 7px;
+        }
+    
+        &__email {
+            font-size: 14px;
+            font-weight: 400;
+            color: $text-secondary-color;
+            margin-top: 7px;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 46px;
+        padding-left: 30px;
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-right: 14px;
+            text-decoration: none;
+            color: $text-color;
+            transition: all .3s ease-in-out;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: -30px;
+            }
+
+            .link-name {
+                &:hover {
+                    color: $primary-hover-color;
+                }
+            }
+
+            .cart-count {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $primary-color;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+                color: white;
+            }
+        }
+        
+        .active {
+            color: $primary-hover-color;
+        }
+    }
+    
+    .btn {
+        margin-top: auto;
+        
+        &__exit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            
+            &:hover {
+                gap: 34px;
+            }
+        }
+    }
+}
+
+.content {
+    padding: 40px 60px;
+    width: 100%;
+    background: #f2f2f2;
+}

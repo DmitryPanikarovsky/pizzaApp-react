@@ -1,9 +1,9 @@
-import { ButtonProps } from './Button.props'
+import { ButtonProps } from './Button.types'
 import clNames from 'classnames'
 import styles from './Button.module.scss'
 
 
-export const Button = function Button({ children, className, appearance = 'small', ...props }: ButtonProps) {
+export const Button = function({ children, className, appearance = 'small', ...props }: ButtonProps) {
     return (
         <button className={clNames(styles.button, styles.accent, className, {
             [styles.big] : appearance === 'big',

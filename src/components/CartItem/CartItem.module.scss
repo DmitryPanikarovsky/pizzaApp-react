@@ -1,0 +1,95 @@
+@import '../../styles/variables.scss';
+
+.item {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+
+    .image {
+        width: 82px;
+        height: 82px;
+        background-size: cover;
+        border-radius: 20px;
+        border: 1px solid $separator-color;
+        filter: drop-shadow(0 8px 25px rgba(224, 219, 196, .9));
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    
+    .currency {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        color: $primary-color;
+    }
+
+    .actions {
+        margin-left: auto;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .count {
+        width: 25px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    .minus {
+        width: 28px;
+        height: 28px;
+        border: 1px solid $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        
+        &:hover {
+            box-shadow: 0px 0px 60px 0px rgba(254, 114, 76, .5);
+            border: 2px solid $primary-color;
+        }
+    }
+    
+    .plus {
+        width: 28px;
+        height: 28px;
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 0px 60px 0px rgba(254, 114, 76, .5);
+        }
+    }
+
+    .remove {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 4px;
+        margin-left: 10px;
+        padding: 0;
+    }
+}

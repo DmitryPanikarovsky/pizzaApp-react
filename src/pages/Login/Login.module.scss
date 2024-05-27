@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.login {
+    width: 100%;
+    max-width: 75%;
+}
+
+.head {
+    text-align: center;
+}
+
+.error {
+    margin-top: 30px;
+    padding: 20px;
+    background: #FFC529;
+    border-radius: 8px;
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    .field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+
+    .delete {
+        position: absolute;
+        top: 14px;
+        right: 6px;
+        img {
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    .label {
+        color: #a8a8a8;
+        font-size: 12px;
+        position: absolute;
+        top: -8px;
+        left: 21px;
+        padding: 0 7px;
+        background: white;
+        border: 1px solid $text-secondary-color;
+        border-radius: 12px;
+    }
+
+    .btn {
+        margin-top: 45px;
+    }
+}
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 14px;
+
+    div {
+        color: $text-secondary-color;
+    }
+
+    .link-reg {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+

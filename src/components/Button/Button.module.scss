@@ -9,6 +9,7 @@
     border-radius: 29px;
     font-style: normal;
     font-weight: 400;
+    transition: all .25s ease-in-out;
 }
 
 .small {
@@ -20,12 +21,13 @@
     font-size: 15px;
     text-transform: uppercase;
     padding: 20px 60px;
+    box-shadow: 0 10px 40px 0 rgba(122, 129, 190, .36);
 }
 
 .accent {
-    background: $primary-color;
-
+    background: $primary-hover-color;
+    
     &:hover {
-        background: $primary-hover-color;
+        background: $primary-color;
     }
 }

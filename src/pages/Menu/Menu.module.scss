@@ -1,0 +1,13 @@
+.menu {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        margin-top: 40px;
+        display: flex;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+}

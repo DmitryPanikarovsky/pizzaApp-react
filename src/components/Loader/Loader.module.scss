@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.loader {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px dashed $primary-color;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.4);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}

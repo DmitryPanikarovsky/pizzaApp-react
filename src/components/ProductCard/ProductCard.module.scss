@@ -1,0 +1,106 @@
+@import '../../styles/variables.scss';
+
+.link {
+    text-decoration: none;
+}
+
+.card {
+    background: white;
+    border-radius: 19px;
+    box-shadow: 19px 17px 31px 2px rgba(172, 161, 161, 0.75);
+    width: 323px;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: none;
+        transform: scale(.95);
+    }
+
+    &__head {
+        border-radius: inherit;
+        min-height: 139px;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0 20px;
+        background: white;
+        display: inline-block;
+        border-radius: 25px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: $text-color;
+    }
+
+    &__currency {
+        font-size: 24px;
+        font-weight: 400;
+        color: $primary-hover-color;
+    }
+
+    &__add-to-cart {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background: $primary-hover-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        transition: all .15s ease-in-out;
+        
+        &:hover {
+            background: $primary-color;
+            transform: scale(1.25);
+        }
+    }
+
+    &__rating {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        background: rgb(255, 244, 231);
+        padding: 6px 2px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 51px;
+        position: absolute;
+        left: 15px;
+        bottom: -14px;
+        z-index: 5;
+        border: 1px solid $separator-color;
+        color: $text-color;
+    }
+    
+    &__footer {
+        padding: 20px;
+    }
+    
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+        font-weight: 600;
+        color: $text-color;
+    }
+    
+    &__description {
+        margin-top: 2px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+        color: $text-secondary-color;
+    }
+}
